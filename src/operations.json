@@ -13,6 +13,46 @@
 			"type": "operation/delete-node"
 		}
 	},
+	":contextual-insert-glossentry--above": {
+		"label": "t__Add entry above",
+		"description": "t__Defines a single sense of a glossary term.",
+		"steps": {
+			"type": "operation/insert-next-to-context-node",
+			"data": {
+				"side": "before",
+				"childNodeStructure": [
+					"glossentry",
+					[
+						"glossterm",
+						[{ "bindTo": "selection", "empty": true }]
+					],
+					[
+						"glossdef"
+					]
+				]
+			}
+		}
+	},
+	":contextual-insert-glossentry--below": {
+		"label": "t__Add entry below",
+		"description": "t__Defines a single sense of a glossary term.",
+		"steps": {
+			"type": "operation/insert-next-to-context-node",
+			"data": {
+				"side": "after",
+				"childNodeStructure": [
+					"glossentry",
+					[
+						"glossterm",
+						[{ "bindTo": "selection", "empty": true }]
+					],
+					[
+						"glossdef"
+					]
+				]
+			}
+		}
+	},
 	":glossAlt-convert-to-glossAbbreviation": {
 		"label": "t__Change to abbreviation",
 		"description": "t__Provides an abbreviated form of the term.",

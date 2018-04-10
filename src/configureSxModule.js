@@ -115,6 +115,8 @@ define([
 			contextualOperations: [
 				{ name: ':glossentry-insert-glossdef' },
 				{ name: ':glossentry-insert-glossUsage' },
+				{ name: ':contextual-insert-glossentry--above' },
+				{ name: ':contextual-insert-glossentry--below' },
 				{ name: ':contextual-delete-glossentry' }
 			],
 			blockFooter: [
